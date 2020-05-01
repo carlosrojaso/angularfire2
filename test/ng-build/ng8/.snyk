@@ -1,0 +1,30 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@angular/fire > firebase-tools > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > inquirer > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > archiver > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > inquirer > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > superstatic > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > archiver > archiver-utils > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > archiver > async > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > google-auto-auth > async > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > archiver > zip-stream > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > superstatic > nash > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > archiver > zip-stream > archiver-utils > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
+    - '@angular/fire > firebase-tools > superstatic > glob-slasher > toxic > lodash':
+        patched: '2020-05-01T00:09:55.102Z'
