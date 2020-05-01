@@ -13,7 +13,9 @@
     "delayed_karma": "sleep 10 && karma start",
     "build": "rm -rf dist && node tools/build.js && npm pack ./dist/packages-dist",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
-    "build:wrapper": "npm i --prefix wrapper && npm run --prefix wrapper build && npm pack ./dist/wrapper-dist"
+    "build:wrapper": "npm i --prefix wrapper && npm run --prefix wrapper build && npm pack ./dist/wrapper-dist",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "schematics": "./dist/packages-dist/collection.json",
   "builders": "./dist/packages-dist/builders.json",
@@ -50,7 +52,8 @@
     "rxjs": "^6.0.0",
     "ws": "^3.3.2",
     "xhr2": "^0.1.4",
-    "zone.js": "^0.8.0 || ^0.9.0"
+    "zone.js": "^0.8.0 || ^0.9.0",
+    "snyk": "^1.316.1"
   },
   "optionalDependencies": {
     "bufferutil": "~3.0.0",
@@ -98,5 +101,6 @@
     "traceur": "0.0.96",
     "typescript": ">=3.4.0 <3.5.0"
   },
-  "typings": "index.d.ts"
+  "typings": "index.d.ts",
+  "snyk": true
 }
